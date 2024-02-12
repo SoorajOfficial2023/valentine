@@ -1,0 +1,19 @@
+<!-- templates/no.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>No Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1 class="no-message">{{ message }}</h1>
+    <img src="{{ url_for('static', filename=image_filename) }}" alt="No Image" class="no-image" style="max-width: 800px; height: auto;">
+    <form action="/result/{{ page_number }}" method="get">
+        <button type="submit">No</button>
+    </form>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

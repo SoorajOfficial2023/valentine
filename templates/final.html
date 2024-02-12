@@ -1,0 +1,18 @@
+<!-- templates/final.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Message</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <img src="{{ url_for('static', filename='final_image.png') }}" alt="Final Image" class="final-image">
+        <h1 class="final-message">വല്ലാത്ത തലവേദന ഞാനൊന്ന് കിടക്കട്ടെ 😪!</h1>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

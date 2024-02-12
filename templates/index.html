@@ -1,0 +1,26 @@
+<!-- templates/index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <img src="{{ url_for('static', filename='valentine_image.jpg') }}" alt="Valentine Image" class="valentine-image">
+        <h1>Will you be my valentine?</h1>
+        <div class="button-container">
+            <form action="/result/0" method="get">
+                <button type="submit">Yes</button>
+            </form>
+            <form action="/result/1" method="get">
+                <button type="submit">No</button>
+            </form>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
